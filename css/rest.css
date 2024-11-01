@@ -1,0 +1,373 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    font-size: 100%;
+    font-family: sans-serif;
+}
+
+body {
+    line-height: 1.5;
+}
+
+/* Eliminación del botón de cancelación en búsquedas */
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/* Estilos básicos de medios y controles */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Contenedor Principal */
+.mainContiner {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* Encabezado Principal */
+.mainHeader {
+    background-color: #000000;
+    height: 65px;
+    width: 100vw;
+}
+
+/* Navegación en Desktop */
+.navbarDesktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+    padding: 0px 8vw;
+}
+
+.logoDesk {
+    display: flex;
+    height: 40px;
+    margin-right: 20px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.aiLogo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 0px rgb(74, 222, 128);
+    cursor: pointer;
+}
+
+.hubLogo {
+    align-self: self-end;
+    font-size: 1.50rem;
+    font-weight: 200;
+    color: rgb(56, 208, 112);
+    margin-left: 0.25rem;
+    text-shadow: rgb(149, 239, 182) 1px 0 3px;
+    cursor: pointer;
+}
+
+
+.deskList {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0px 10px;
+}
+
+.deskLi {
+    padding: 0px 10px;
+    align-self: center;
+}
+
+
+.deskLi>a {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #d1d5db;
+    display: flex;
+    align-self: center;
+    min-width: 80px;
+
+}
+
+.deskLi a:hover svg path {
+    stroke: #22c55e;
+
+}
+
+
+.deskLi a>svg {
+    width: auto;
+    height: 1.1em;
+    padding: 0px 5px;
+    align-self: center;
+}
+
+.deskLi a:hover {
+    color: #22c55e;
+    transition: 0.3s;
+}
+
+
+/* Selector específico para aplicar `fill` al `path` dentro del SVG en hover */
+
+/* Menú Desplegable */
+.deskLiDrop {
+    padding: 0px 10px;
+    position: relative;
+}
+
+.deskLiDrop>a {
+    margin: 0px 0px;
+    width: 140px;
+    justify-content: start;
+    font-size: 1.0rem;
+    color: #d1d5db;
+    display: flex;
+}
+
+.dropdownDeks {
+    margin-top: 30px;
+    display: none;
+    position: absolute;
+    top: 1.4vh;
+    left: 3px;
+    min-width: 200px;
+    height: 16vh;
+    text-align: center;
+}
+
+
+
+
+.dropdownDeks ul {
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 24, 39, 0.8);
+    backdrop-filter: blur(2px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+    border: rgba(74, 222, 128, 0.20) 2px solid;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+
+
+
+.dropdownDeks li {
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+    padding-left: 20px;
+}
+
+.dropdownDeks li:hover {
+
+    border-radius: 5px;
+    background-color: rgba(74, 222, 128, 0.10);
+    position: relative;
+
+}
+
+
+.dropdownDeks li>a {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #d1d5db;
+
+    position: relative;
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    /* Centra el texto */
+    display: inline-block;
+    /* Permite ajustar dimensiones */
+
+
+}
+
+
+
+
+.dropdownDeks li>a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    /* Posiciona al 50% del ancho del <a> */
+    transform: translateX(-40%) scaleX(0);
+    /* Centra y oculta la línea */
+    width: 130%;
+    height: 2px;
+    background: linear-gradient(to right, transparent 0%, rgba(0, 255, 94, 0.5) 50%, transparent 80%);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+.dropdownDeks li:hover a::after {
+    transform: translateX(-40%) scaleX(1);
+}
+
+
+
+.iconArrow {
+    transition: transform 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+/* Contenedor de Búsqueda */
+.searchContiner {
+    position: relative;
+    display: inline-block;
+    height: 60%;
+
+    margin: 0px 10px;
+}
+
+.searchIconIn {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    pointer-events: none;
+    z-index: 3;
+    fill: white;
+}
+
+.deskSearch {
+    background-color: #000000;
+    border-radius: 99px;
+    border: 1.5px rgba(74, 222, 128, 0.592) solid;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+    margin: 0;
+    box-shadow: none;
+    backdrop-filter: blur(4px);
+    color: rgb(229, 231, 235);
+    transition: all 0.3s;
+    padding: 0px 25px;
+    display: block;
+    height: 100%;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    width: 19vw;
+
+    background: rgba(17, 24, 39, 0.7);
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+.show {
+    display: block;
+}
+
+/* Animación de Pulsación */
+@keyframes pulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.2);
+    }
+
+    50% {
+        box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.1);
+    }
+}
+
+
+
+
+@keyframes pulsedrop {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.2);
+    }
+
+    50% {
+        box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.1);
+    }
+}
+
+.mainContente {
+    background: linear-gradient(to bottom, rgb(17, 24, 39), rgb(0, 0, 0));
+}
