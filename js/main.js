@@ -60,14 +60,17 @@ mobileButton.addEventListener('click', () => {
 
 mobileNavbarDropdown.addEventListener('click', () => {
     if (mobileDropdownMenu.classList.contains('show')) {
-        // Ocultar menú
-        mobileNavbarList.style.height = '23vh';
-        mobileDropdownMenu.classList.remove('show');
-        mobileDropdownArrow.style.transform = 'rotate(0deg)';
+        // Alterna la clase 'show' en el menú desplegable
+        mobileDropdownMenu.classList.toggle('show');
+
+        // Rota la flecha según el estado del menú
+        mobileDropdownArrow.style.transform = mobileDropdownMenu.classList.contains('show')
+            ? 'rotate(180deg)'
+            : 'rotate(0deg)';
     } else {
         // Mostrar menú con animación
         mobileDropdownMenu.classList.add('show');
-        mobileNavbarList.style.height = '35vh';
+
         mobileDropdownArrow.style.transform = 'rotate(180deg)'; // Cambia la dirección del ícono si lo deseas
     }
 });
