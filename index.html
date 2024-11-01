@@ -55,9 +55,106 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="navbar-item"><a href="#" class="navbar-link">Merchandising</a></li>
-                    <li class="navbar-item"><a href="#" class="navbar-link">Resources</a></li>
+                    <li class="navbar-item"><a href="#" class="navbar-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" viewBox="0 0 24 24">
+                                <g fill="none" stroke="#d1d5db" stroke-width="1.5">
+                                    <path stroke-linecap="round" d="M21 22H3m16 0v-7M5 22v-7" />
+                                    <path stroke-linejoin="round"
+                                        d="M16.528 2H7.472c-1.203 0-1.804 0-2.287.299c-.484.298-.753.836-1.29 1.912L2.49 7.76c-.324.82-.608 1.786-.062 2.479A2 2 0 0 0 6 9a2 2 0 1 0 4 0a2 2 0 1 0 4 0a2 2 0 1 0 4 0a2 2 0 0 0 3.571 1.238c.546-.693.262-1.659-.062-2.479l-1.404-3.548c-.537-1.076-.806-1.614-1.29-1.912C18.332 2 17.731 2 16.528 2Z" />
+                                </g>
+                            </svg>
+                            Merchandising</a></li>
+                    <li class="navbar-item"><a href="#" class="navbar-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" viewBox="0 0 24 24">
+                                <path fill="none" stroke="#d1d5db" stroke-width="2"
+                                    d="m12 3l9 4.5l-9 4.5l-9-4.5zm4.5 7.25L21 12.5L12 17l-9-4.5l4.5-2.25m9 5L21 17.5L12 22l-9-4.5l4.5-2.25" />
+                            </svg>
+
+                            Resources</a></li>
                 </ul>
+
+            </nav>
+
+            <nav class="mobile-navbar">
+
+                <h2 class="mobile-logo"><span class="mobile-logo-ai">AI</span> <span class="mobile-logo-hub">HUB</span>
+                </h2>
+                <div class="mobile-search-container">
+                    <img class="mobile-search-icon" src="assets/icons/flecha.svg" alt="">
+                    <input type="search" placeholder="Search any model" class="mobile-search-input">
+                </div>
+
+                <button class="mobile-button" id="mobileButton"><svg xmlns="http://www.w3.org/2000/svg" width="1rem"
+                        height="2rem" viewBox="0 0 24 24" class="mobile-button-icon" id="mobileButtonIcon">
+                        <path fill="none" stroke="#6b7280" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" d="M5 17h14M5 12h14M5 7h14" />
+                    </svg></button>
+
+                <div class="mobile-version" id="mobileVersion">
+                    <ul class="mobile-navbar-list" id="mobileNavbarList">
+                        <li class="mobile-navbar-item">
+                            <a href="#" class="mobile-navbar-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="#D1D5DB" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2">
+                                        <path
+                                            d="M6.133 21C4.955 21 4 20.02 4 18.81v-8.802c0-.665.295-1.295.8-1.71l5.867-4.818a2.09 2.09 0 0 1 2.666 0l5.866 4.818c.506.415.801 1.045.801 1.71v8.802c0 1.21-.955 2.19-2.133 2.19z" />
+                                        <path d="M9.5 21v-5.5a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2V21" />
+                                    </g>
+                                </svg>
+                                Home
+                            </a>
+                        </li>
+                        <li class="mobile-navbar-item mobile-navbar-dropdown" id="mobileNavbarDropdown">
+                            <a href="#" class="mobile-navbar-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M2.5 8.833H.679m12.642 0H11.5m-9-3.666H.679m12.642 0H11.5M5.167 2.5V.679m0 12.642V11.5m3.666-9V.679m0 12.642V11.5m1.667-9h-7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1v-7a1 1 0 0 0-1-1" />
+                                        <path
+                                            d="M4.667 7.25c-.281-.048-.281-.452 0-.501a2.55 2.55 0 0 0 2.05-1.964l.018-.078c.06-.278.457-.28.52-.002l.02.09a2.56 2.56 0 0 0 2.057 1.953c.283.049.283.455 0 .504a2.56 2.56 0 0 0-2.057 1.952l-.02.09c-.063.278-.46.276-.52-.002l-.017-.077A2.55 2.55 0 0 0 4.667 7.25" />
+                                    </g>
+                                </svg>
+                                AI Explorer
+                                <svg class="mobile-dropdown-arrow" id="mobileDropdownArrow"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="#d1d5db" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m7 10l5 5l5-5" />
+                                </svg>
+                            </a>
+                            <div class="mobile-dropdown-menu" id="mobileDropdownMenu">
+                                <ul class="mobile-dropdown-list">
+                                    <li class="mobile-dropdown-item"><a href="#" class="mobile-dropdown-link">New AI</a>
+                                    </li>
+                                    <li class="mobile-dropdown-item"><a href="#"
+                                            class="mobile-dropdown-link">Trending</a>
+                                    </li>
+                                    <li class="mobile-dropdown-item"><a href="#" class="mobile-dropdown-link">Hugo</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mobile-navbar-item"><a href="#" class="mobile-navbar-link">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="#d1d5db" stroke-width="1.5">
+                                        <path stroke-linecap="round" d="M21 22H3m16 0v-7M5 22v-7" />
+                                        <path stroke-linejoin="round"
+                                            d="M16.528 2H7.472c-1.203 0-1.804 0-2.287.299c-.484.298-.753.836-1.29 1.912L2.49 7.76c-.324.82-.608 1.786-.062 2.479A2 2 0 0 0 6 9a2 2 0 1 0 4 0a2 2 0 1 0 4 0a2 2 0 1 0 4 0a2 2 0 0 0 3.571 1.238c.546-.693.262-1.659-.062-2.479l-1.404-3.548c-.537-1.076-.806-1.614-1.29-1.912C18.332 2 17.731 2 16.528 2Z" />
+                                    </g>
+                                </svg>
+                                Merchandising</a></li>
+                        <li class="mobile-navbar-item"><a href="#" class="mobile-navbar-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="#d1d5db" stroke-width="2"
+                                        d="m12 3l9 4.5l-9 4.5l-9-4.5zm4.5 7.25L21 12.5L12 17l-9-4.5l4.5-2.25m9 5L21 17.5L12 22l-9-4.5l4.5-2.25" />
+                                </svg>
+
+
+                                Resources</a></li>
+                    </ul>
+                </div>
+
             </nav>
         </header>
         <main class="main-content"></main>
