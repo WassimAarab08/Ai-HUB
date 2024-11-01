@@ -1,7 +1,7 @@
 // Selecciona el botón desplegable
-const deskLiDrop = document.getElementById('deskLiDrop');
-const iconArrow = document.getElementById('iconArrow');
-const dropdownDeks = document.getElementById('dropdownDeks');
+const deskLiDrop = document.getElementById('navbarDropdown');
+const iconArrow = document.getElementById('dropdownArrow');
+const dropdownDeks = document.getElementById('dropdownMenu');
 
 // Escucha el evento de clic en el botón desplegable
 deskLiDrop.addEventListener('click', function (event) {

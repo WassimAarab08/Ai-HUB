@@ -1,4 +1,3 @@
-/* CSS Reset */
 *,
 *::before,
 *::after {
@@ -64,8 +63,11 @@ table {
     border-spacing: 0;
 }
 
-/* Contenedor Principal */
-.mainContiner {
+
+
+
+/* Estilo para mantener la estructura de la web */
+.main-container {
     padding: 0;
     margin: 0;
     display: grid;
@@ -73,31 +75,32 @@ table {
     grid-template-rows: auto 1fr auto;
 }
 
-/* Encabezado Principal */
-.mainHeader {
+
+/* Estilos de la barra de navegación */
+.main-header {
     background-color: #000000;
     height: 65px;
     width: 100vw;
 }
 
-/* Navegación en Desktop */
-.navbarDesktop {
+
+.navbar {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
     height: 100%;
-    padding: 0px 8vw;
+    padding: 0px 10vw 0px 0vw;
 }
 
-.logoDesk {
+.logo {
     display: flex;
     height: 40px;
     margin-right: 20px;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
-.aiLogo {
+.logo-ai {
     font-size: 1.8rem;
     font-weight: 600;
     letter-spacing: -0.025em;
@@ -106,7 +109,7 @@ table {
     cursor: pointer;
 }
 
-.hubLogo {
+.logo-hub {
     align-self: self-end;
     font-size: 1.50rem;
     font-weight: 200;
@@ -117,80 +120,78 @@ table {
 }
 
 
-.deskList {
+.navbar-list {
     display: flex;
     align-items: center;
     height: 100%;
     padding: 0px 10px;
 }
 
-.deskLi {
+.navbar-item {
     padding: 0px 10px;
     align-self: center;
 }
 
 
-.deskLi>a {
-    font-size: 1.1rem;
-    font-weight: 300;
+.navbar-link {
+    font-size: 1rem;
+    font-weight: 500;
     color: #d1d5db;
     display: flex;
     align-self: center;
     min-width: 80px;
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.deskLi a:hover svg path {
+.navbar-link:hover svg>path {
     stroke: #22c55e;
-
 }
 
-
-.deskLi a>svg {
+.navbar-link>svg {
     width: auto;
     height: 1.1em;
     padding: 0px 5px;
     align-self: center;
 }
 
-.deskLi a:hover {
+.navbar-link:hover {
     color: #22c55e;
     transition: 0.3s;
 }
 
-
-/* Selector específico para aplicar `fill` al `path` dentro del SVG en hover */
-
-/* Menú Desplegable */
-.deskLiDrop {
+.navbar-dropdown {
     padding: 0px 10px;
     position: relative;
 }
 
-.deskLiDrop>a {
+.navbar-link {
     margin: 0px 0px;
-    width: 140px;
+
     justify-content: start;
     font-size: 1.0rem;
     color: #d1d5db;
     display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.dropdownDeks {
+
+
+
+
+/* Estilos de la del dropdown-menu */
+
+.dropdown-menu {
     margin-top: 30px;
     display: none;
     position: absolute;
     top: 1.4vh;
     left: 3px;
     min-width: 200px;
-    height: 16vh;
+    height: 13vh;
     text-align: center;
 }
 
-
-
-
-.dropdownDeks ul {
+.dropdown-list {
     padding: 10px;
     border-radius: 10px;
     width: 100%;
@@ -207,9 +208,13 @@ table {
 }
 
 
+.dropdown-item:hover>.dropdown-link {
+    color: rgb(33, 210, 98);
+    transition: 0.3s;
+}
 
 
-.dropdownDeks li {
+.dropdown-item {
     padding: 0px;
     width: 100%;
     height: 100%;
@@ -222,42 +227,28 @@ table {
     padding-left: 20px;
 }
 
-.dropdownDeks li:hover {
-
+.dropdown-item:hover {
     border-radius: 5px;
     background-color: rgba(74, 222, 128, 0.10);
     position: relative;
-
 }
 
-
-.dropdownDeks li>a {
-    font-size: 1.1rem;
-    font-weight: 300;
+.dropdown-link {
+    font-size: 1rem;
+    font-weight: 400;
     color: #d1d5db;
-
     position: relative;
-
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    /* Centra el texto */
     display: inline-block;
-    /* Permite ajustar dimensiones */
-
-
 }
 
-
-
-
-.dropdownDeks li>a::after {
+.dropdown-link::after {
     content: "";
     position: absolute;
     bottom: 0;
     left: 50%;
-    /* Posiciona al 50% del ancho del <a> */
     transform: translateX(-40%) scaleX(0);
-    /* Centra y oculta la línea */
     width: 130%;
     height: 2px;
     background: linear-gradient(to right, transparent 0%, rgba(0, 255, 94, 0.5) 50%, transparent 80%);
@@ -265,15 +256,11 @@ table {
     transition: transform 0.3s ease-in-out;
 }
 
-
-
-.dropdownDeks li:hover a::after {
+.dropdown-item:hover .dropdown-link::after {
     transform: translateX(-40%) scaleX(1);
 }
 
-
-
-.iconArrow {
+.dropdown-arrow {
     transition: transform 0.3s;
 }
 
@@ -286,18 +273,17 @@ table {
 
 
 
-/* Contenedor de Búsqueda */
-.searchContiner {
+/* Estilos del Input de busqueda*/
+.search-container {
     position: relative;
     display: inline-block;
     height: 60%;
-
     margin: 0px 10px;
 }
 
-.searchIconIn {
+.search-icon {
     position: absolute;
-    left: 8px;
+    left: 10px;
     top: 50%;
     transform: translateY(-50%);
     width: 16px;
@@ -307,7 +293,7 @@ table {
     fill: white;
 }
 
-.deskSearch {
+.search-input {
     background-color: #000000;
     border-radius: 99px;
     border: 1.5px rgba(74, 222, 128, 0.592) solid;
@@ -319,15 +305,15 @@ table {
     backdrop-filter: blur(4px);
     color: rgb(229, 231, 235);
     transition: all 0.3s;
-    padding: 0px 25px;
+    padding: 0px 2vw;
     display: block;
     height: 100%;
     animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     width: 19vw;
-
     background: rgba(17, 24, 39, 0.7);
     box-sizing: border-box;
 }
+
 
 
 
@@ -340,7 +326,7 @@ table {
     display: block;
 }
 
-/* Animación de Pulsación */
+/* Animación de borde de input */
 @keyframes pulse {
 
     0%,
@@ -356,18 +342,8 @@ table {
 
 
 
-@keyframes pulsedrop {
+/* Estilos de la sección principal */
 
-    0%,
-    100% {
-        box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.2);
-    }
-
-    50% {
-        box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.1);
-    }
-}
-
-.mainContente {
+.main-content {
     background: linear-gradient(to bottom, rgb(17, 24, 39), rgb(0, 0, 0));
 }
