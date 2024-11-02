@@ -136,16 +136,24 @@ table {
 
 
 .navbar-link {
-    font-size: 1rem;
+    font-size: clamp(1rem, 1rem, 2.5rem);
     font-weight: 500;
     color: #d1d5db;
     display: flex;
     align-self: center;
     min-width: 80px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px 0px;
+    justify-content: start;
+
+
 }
 
 .navbar-link:hover svg>g>path {
+    stroke: #22c55e;
+}
+
+.navbar-link:hover svg>path {
     stroke: #22c55e;
 }
 
@@ -166,15 +174,7 @@ table {
     position: relative;
 }
 
-.navbar-link {
-    margin: 0px 0px;
 
-    justify-content: start;
-    font-size: 1.0rem;
-    color: #d1d5db;
-    display: flex;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
 
 
@@ -388,6 +388,7 @@ table {
     background-color: #000000;
     z-index: 999;
     animation: slideDown 0.3s ease-out;
+
 }
 
 
@@ -415,7 +416,7 @@ table {
     font-weight: 200;
     color: rgb(56, 208, 112);
     margin-left: 0.25rem;
-    text-shadow: rgb(149, 239, 182) 4px 0 4px;
+    text-shadow: rgb(149, 239, 182) 2px 0 4px;
     cursor: pointer;
     padding-bottom: 2px;
 }
@@ -430,12 +431,13 @@ table {
     left: 0;
     width: 100vw;
     padding: 0;
+    padding-top: 0.5vh;
     margin: 0;
     z-index: 2;
-
-
+    border-top: #22c55e44 .1vh solid;
     background-color: #000000;
     animation: slideDown 0.3s ease-out;
+
 }
 
 @keyframes slideDown {
@@ -452,30 +454,22 @@ table {
 
 
 .mobile-navbar-item {
-    padding: 0px 15px;
+    padding: 0px 3vw;
     align-self: flex-start;
     flex: 1 6vh;
     width: 100%;
-
     align-items: center;
     justify-content: center;
     align-content: center;
 
-
-
-
 }
 
-body.modal-open {
-    overflow: hidden;
-}
 
 
 .mobile-navbar-link {
     font-size: 1.2rem;
     font-weight: 500;
     color: #d1d5db;
-
     display: flex;
     align-self: flex-start;
     width: 100%;
@@ -488,6 +482,10 @@ body.modal-open {
     stroke: #22c55e;
 }
 
+.mobile-navbar-link:hover svg>path {
+    stroke: #22c55e;
+}
+
 .mobile-navbar-link>svg {
     width: auto;
     height: 1.1em;
@@ -495,26 +493,29 @@ body.modal-open {
     align-self: center;
 }
 
+
+
 .mobile-navbar-link:hover {
     color: #22c55e;
     transition: 0.3s;
 }
 
 .mobile-navbar-dropdown {
-    padding: 0px 15px;
+    padding: 0px 3vw;
     position: relative;
 }
 
 .mobile-dropdown-arrow {
     fill: #d1d5db;
     stroke: #d1d5db;
+    transition: transform 0.3s;
+    margin-left: auto;
 }
 
 .mobile-dropdown-menu {
 
     overflow: hidden;
     max-height: 0;
-
     transition: max-height 0.4s ease-in-out;
 
 }
@@ -531,7 +532,7 @@ body.modal-open {
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-top: 1vh;
+    margin: 1.5vh 0vh;
     display: flex;
     flex-direction: column;
 }
@@ -541,21 +542,30 @@ body.modal-open {
     padding: 5px;
     padding-left: 10px;
     margin-left: 3.5vw;
-
-    border-left: #22c55ed0 2px solid;
+    border-left: #22c55e81 2px solid;
 
 }
+
 
 .mobile-dropdown-link {
 
     color: #d1d5db;
     text-decoration: none;
     font-size: 1.2rem;
-
     Font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: block;
     padding-left: 10px;
 }
+
+
+
+.mobile-navbar-link-home {
+    justify-self: center;
+
+}
+
+
+
 
 .mobile-dropdown-link:hover {
     color: #22c55e;
@@ -597,25 +607,44 @@ body.modal-open {
     display: block;
     height: 100%;
     animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-    width: 200px;
+    min-width: 200px;
+    width: 33vw;
     background: rgba(17, 24, 39, 0.7);
     box-sizing: border-box;
 }
 
 .mobile-button {
-    height: 100%;
-    padding: 0;
-    margin: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.mobile-button>svg {
-    width: 12vw;
-    height: 65px;
-    padding: 0;
-    margin: 0;
+.bar {
+    width: 100%;
+    height: 3px;
+    background-color: #d1d5db;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.mobile-button.open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 9px);
+    background-color: #22c55e;
+}
+
+.mobile-button.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-button.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+    background-color: #22c55e;
 
 }
 
@@ -638,5 +667,11 @@ body.modal-open {
     .mobile-navbar {
         display: none;
         /* Oculta la barra de navegación móvil en pantallas grandes */
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .main-header {
+        padding-right: 0;
     }
 }
