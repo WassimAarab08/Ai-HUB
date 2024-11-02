@@ -11,20 +11,7 @@ const mobileNavbarList = document.getElementById('mobileNavbarList');
 const mobileDropdownArrow = document.getElementById('mobileDropdownArrow');
 
 
-// Dropdown pc
-deskLiDrop.addEventListener('click', function (event) {
-    event.stopPropagation();
 
-    const isDropdownVisible = dropdownDeks.classList.toggle('show');
-
-    if (isDropdownVisible) {
-        iconArrow.style.transform = 'rotate(180deg)';
-        iconArrow.querySelector('path').setAttribute('stroke', '#22c55e');
-    } else {
-        iconArrow.style.transform = 'rotate(0deg)';
-        iconArrow.querySelector('path').setAttribute('stroke', '#d1d5db');
-    }
-});
 
 
 // Dropdown pc
