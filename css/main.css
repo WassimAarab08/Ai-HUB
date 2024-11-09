@@ -1,0 +1,125 @@
+.main-content {
+    padding: 2vw 8vw;
+}
+
+.card-product {
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+    max-height: 600px;
+    border: #7071705a 1px solid;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.card-product:hover {
+    box-shadow: 0 0 5px 0 #22c55e;
+
+}
+
+
+.btn-agrega-cesta {
+    background-color: rgba(34, 197, 94, 0.203);
+    border-radius: 12px;
+    border: #22c55e 1px solid;
+    margin-top: 20px;
+    width: 200px;
+    margin-bottom: 20px;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-agrega-cesta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 50%;
+    height: 100%;
+    background: rgba(34, 197, 94, 0.10);
+
+    animation: brillo 2s infinite;
+    opacity: .2;
+}
+
+.link-cesta {
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    height: 50px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icono-cesta {
+    height: 20px;
+
+}
+
+
+
+
+
+@keyframes brillo {
+    0% {
+        left: -50%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+
+.img-product {
+
+    scale: 1;
+    overflow: hidden;
+}
+
+.card-product:hover .img-product {
+    scale: 1.1;
+
+}
+
+
+.product-title {
+    color: #ffffff;
+    margin-top: 20px;
+    width: 90%;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-around;
+    font-family: ui-sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.product-price {
+    color: #22c55e;
+    font-weight: 900;
+}
+
+.product-description {
+    font-size: .9rem;
+    width: 75%;
+    font-weight: 100;
+    font-family: ui-sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.product-description-continer {
+    width: 100%;
+    color: #d1d5db;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
