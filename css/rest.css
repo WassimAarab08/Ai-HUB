@@ -79,6 +79,9 @@ table {
     height: 65px;
     width: 100vw;
     padding-right: 5vw;
+    position: fixed;
+    z-index: 999;
+
 }
 
 .navbar {
@@ -307,6 +310,7 @@ table {
 
 /* Estilos de la sección principal */
 .main-content {
+    margin-top: 65px;
     background: linear-gradient(to bottom, rgb(17, 24, 39), rgb(0, 0, 0));
 }
 
@@ -675,7 +679,7 @@ table {
 
 .footer-description {
     font-size: 0.8rem;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
     width: 70%;
 
@@ -684,7 +688,7 @@ table {
 .links-section-1 {
     display: flex;
     flex-direction: row;
-
+    margin-bottom: 20px;
 
     width: 100%;
 }
@@ -704,8 +708,20 @@ table {
 
 .footer-links {
     padding: 20px 0px;
+
+
+}
+
+.footer-links li {
+    padding: 10px 0 0 0px;
+
+
+}
+
+.footer-link {
+
     font-family: ui-sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1rem;
+    font-size: .8rem;
 
 }
 
