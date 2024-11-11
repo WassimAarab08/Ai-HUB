@@ -1,5 +1,11 @@
 .main-content {
     padding: 2vw 5vw;
+    display: grid;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .card-product {
@@ -130,14 +136,4 @@
 
 .texto-cesta {
     margin-left: 10px;
-}
-
-.main-content {
-    display: grid;
-    gap: 25px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-
 }

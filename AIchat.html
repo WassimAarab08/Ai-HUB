@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI HUB</title>
+    <link rel="stylesheet" href="css/rest.css">
+    <link rel="stylesheet" href="css/Aichat.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-container">
+        <header class="main-header">
+            <nav class="navbar">
+                <h2 class="logo"><span class="logo-ai">AI</span> <span class="logo-hub">HUB</span></h2>
+                <div class="search-container">
+                    <img class="search-icon" src="assets/icons/flecha.svg" alt="">
+                    <input type="search" placeholder="Search any model" class="search-input">
+                </div>
+                <ul class="navbar-list">
+                    <li class="navbar-item"><a href="index.html" class="navbar-link">
+                            <svg class="" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                viewBox="0 0 24 24">
+                                <g fill="none" stroke="#D1D5DB" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2">
+                                    <path
+                                        d="M6.133 21C4.955 21 4 20.02 4 18.81v-8.802c0-.665.295-1.295.8-1.71l5.867-4.818a2.09 2.09 0 0 1 2.666 0l5.866 4.818c.506.415.801 1.045.801 1.71v8.802c0 1.21-.955 2.19-2.133 2.19z" />
+                                    <path d="M9.5 21v-5.5a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2V21" />
+                                </g>
+                            </svg> Home
+                        </a></li>
+                    <li class="navbar-item navbar-dropdown" id="navbarDropdown">
+                        <a href="#" class="navbar-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
+                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M2.5 8.833H.679m12.642 0H11.5m-9-3.666H.679m12.642 0H11.5M5.167 2.5V.679m0 12.642V11.5m3.666-9V.679m0 12.642V11.5m1.667-9h-7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1v-7a1 1 0 0 0-1-1" />
+                                    <path
+                                        d="M4.667 7.25c-.281-.048-.281-.452 0-.501a2.55 2.55 0 0 0 2.05-1.964l.018-.078c.06-.278.457-.28.52-.002l.02.09a2.56 2.56 0 0 0 2.057 1.953c.283.049.283.455 0 .504a2.56 2.56 0 0 0-2.057 1.952l-.02.09c-.063.278-.46.276-.52-.002l-.017-.077A2.55 2.55 0 0 0 4.667 7.25" />
+                                </g>
+                            </svg>
+                            AI Explorer
+                            <svg class="dropdown-arrow" id="dropdownArrow" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24">
+                                <path fill="none" stroke="#d1d5db" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m7 10l5 5l5-5" />
+                            </svg>
+                        </a>
+                        <div class="dropdown-menu" id="dropdownMenu">
+                            <ul class="dropdown-list">
+                                <li class="dropdown-item"><a href="AIchat.html" class="dropdown-link">AI Chats</a></li>
+                                <li class="dropdown-item"><a href="AIvideos.html" class="dropdown-link">AI for
+                                        videos</a>
+                                </li>
+                                <li class="dropdown-item"><a href="AIimages.html" class="dropdown-link">AI for
+                                        images</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navbar-item"><a href="merchandising.html" class="navbar-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" viewBox="0 0 24 24">
+                                <g fill="none" stroke="#d1d5db" stroke-width="1.5">
+                                    <path stroke-linecap="round" d="M21 22H3m16 0v-7M5 22v-7" />
+                                    <path stroke-linejoin="round"
+                                        d="M16.528 2H7.472c-1.203 0-1.804 0-2.287.299c-.484.298-.753.836-1.29 1.912L2.49 7.76c-.324.82-.608 1.786-.062 2.479A2 2 0 0 0 6 9a2 2 0 1 0 4 0a2 2 0 1 0 4 0a2 2 0 1 0 4 0a2 2 0 0 0 3.571 1.238c.546-.693.262-1.659-.062-2.479l-1.404-3.548c-.537-1.076-.806-1.614-1.29-1.912C18.332 2 17.731 2 16.528 2Z" />
+                                </g>
+                            </svg>
+                            Merchandising</a></li>
+                    <li class="navbar-item"><a href="blog.html" class="navbar-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" viewBox="0 0 24 24">
+                                <path fill="none" stroke="#d1d5db" stroke-width="2"
+                                    d="m12 3l9 4.5l-9 4.5l-9-4.5zm4.5 7.25L21 12.5L12 17l-9-4.5l4.5-2.25m9 5L21 17.5L12 22l-9-4.5l4.5-2.25" />
+                            </svg>
+
+                            Blog</a></li>
+                </ul>
+
+            </nav>
+
+            <nav class="mobile-navbar">
+
+                <h2 class="mobile-logo"><span class="mobile-logo-ai">AI</span> <span class="mobile-logo-hub">HUB</span>
+                </h2>
+                <div class="mobile-search-container">
+                    <img class="mobile-search-icon" src="assets/icons/flecha.svg" alt="">
+                    <input type="search" placeholder="Search any model" class="mobile-search-input">
+                </div>
+
+                <button class="mobile-button" id="mobileButton">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <div class="mobile-version" id="mobileVersion">
+                    <ul class="mobile-navbar-list" id="mobileNavbarList">
+                        <li class="mobile-navbar-item mobile-navbar-link">
+                            <a href="index.html" class="mobile-navbar-link  ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="#D1D5DB" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2">
+                                        <path
+                                            d="M6.133 21C4.955 21 4 20.02 4 18.81v-8.802c0-.665.295-1.295.8-1.71l5.867-4.818a2.09 2.09 0 0 1 2.666 0l5.866 4.818c.506.415.801 1.045.801 1.71v8.802c0 1.21-.955 2.19-2.133 2.19z" />
+                                        <path d="M9.5 21v-5.5a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2V21" />
+                                    </g>
+                                </svg>
+                                Home
+                            </a>
+                        </li>
+                        <li class="mobile-navbar-item mobile-navbar-dropdown" id="mobileNavbarDropdown">
+                            <a href="#" class="mobile-navbar-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M2.5 8.833H.679m12.642 0H11.5m-9-3.666H.679m12.642 0H11.5M5.167 2.5V.679m0 12.642V11.5m3.666-9V.679m0 12.642V11.5m1.667-9h-7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1v-7a1 1 0 0 0-1-1" />
+                                        <path
+                                            d="M4.667 7.25c-.281-.048-.281-.452 0-.501a2.55 2.55 0 0 0 2.05-1.964l.018-.078c.06-.278.457-.28.52-.002l.02.09a2.56 2.56 0 0 0 2.057 1.953c.283.049.283.455 0 .504a2.56 2.56 0 0 0-2.057 1.952l-.02.09c-.063.278-.46.276-.52-.002l-.017-.077A2.55 2.55 0 0 0 4.667 7.25" />
+                                    </g>
+                                </svg>
+                                AI Explorer
+                                <svg class="mobile-dropdown-arrow" id="mobileDropdownArrow"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="#d1d5db" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m7 10l5 5l5-5" />
+                                </svg>
+                            </a>
+                            <div class="mobile-dropdown-menu" id="mobileDropdownMenu">
+                                <ul class="mobile-dropdown-list">
+                                    <li class="mobile-dropdown-item"><a href="AIchat.html"
+                                            class="mobile-dropdown-link">AI Chats</a>
+                                    </li>
+                                    <li class="mobile-dropdown-item"><a href="AIvideos.html"
+                                            class="mobile-dropdown-link">AI for videos</a>
+                                    </li>
+                                    <li class="mobile-dropdown-item"><a href="AIimages.html"
+                                            class="mobile-dropdown-link">AI for images</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mobile-navbar-item"><a href="merchandising.html" class="mobile-navbar-link">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="#d1d5db" stroke-width="1.5">
+                                        <path stroke-linecap="round" d="M21 22H3m16 0v-7M5 22v-7" />
+                                        <path stroke-linejoin="round"
+                                            d="M16.528 2H7.472c-1.203 0-1.804 0-2.287.299c-.484.298-.753.836-1.29 1.912L2.49 7.76c-.324.82-.608 1.786-.062 2.479A2 2 0 0 0 6 9a2 2 0 1 0 4 0a2 2 0 1 0 4 0a2 2 0 1 0 4 0a2 2 0 0 0 3.571 1.238c.546-.693.262-1.659-.062-2.479l-1.404-3.548c-.537-1.076-.806-1.614-1.29-1.912C18.332 2 17.731 2 16.528 2Z" />
+                                    </g>
+                                </svg>
+                                Merchandising</a></li>
+                        <li class="mobile-navbar-item"><a href="blog.html" class="mobile-navbar-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="#d1d5db" stroke-width="2"
+                                        d="m12 3l9 4.5l-9 4.5l-9-4.5zm4.5 7.25L21 12.5L12 17l-9-4.5l4.5-2.25m9 5L21 17.5L12 22l-9-4.5l4.5-2.25" />
+                                </svg>
+
+
+                                Blog</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+        </header>
+        <main class="main-content">
+            <div class="card">
+                <img src="https://static.vecteezy.com/system/resources/previews/024/558/807/non_2x/openai-chatgpt-logo-icon-free-png.png"
+                    alt="ChatGPT Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">ChatGPT (OpenAI)</h5>
+                    <p class="card-description">Advanced AI chatbot capable of understanding context, writing code, and
+                        providing detailed explanations on various topics</p>
+                </div>
+                <a href="https://chat.openai.com" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="https://t3.ftcdn.net/jpg/07/35/72/34/360_F_735723430_ZhWRsfJJUvjiFtLl3IQFLQLACMuD6H9I.jpg"
+                    alt="Gemini Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Gemini (Google)</h5>
+                    <p class="card-description">Google's most capable AI model, offering multimodal understanding with
+                        text, code, images, and audio</p>
+                </div>
+                <a href="https://gemini.google.com" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="https://www.ermalalibali.com/wp-content/uploads/2023/04/poe.com-logo.png" alt="Poe Logo"
+                    class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Poe</h5>
+                    <p class="card-description">Platform that provides access to multiple AI models including ChatGPT,
+                        Claude, and custom bots</p>
+                </div>
+                <a href="https://poe.com" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/perplexity-ai-icon.png"
+                    alt="Perplexity Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Perplexity</h5>
+                    <p class="card-description">AI-powered search engine that provides accurate, cited answers with
+                        real-time information</p>
+                </div>
+                <a href="https://www.perplexity.ai" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="https://preview.redd.it/original-inspiration-for-the-claude-logo-v0-4vjpaxksksyd1.jpg?width=960&format=pjpg&auto=webp&s=46d73368b0c314d62116172a954a9e38c3638163"
+                    alt="Claude Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Claude (Anthropic)</h5>
+                    <p class="card-description">Advanced AI assistant known for thoughtful, nuanced responses and strong
+                        analytical capabilities</p>
+                </div>
+                <a href="https://claude.ai" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/images/deepai-logo.png" alt="DeepAI Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">DeepAI</h5>
+                    <p class="card-description">Comprehensive AI platform offering text generation, image processing,
+                        and machine learning APIs for developers</p>
+                </div>
+                <a href="https://deepai.org" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/images/copilot-logo.png" alt="Copilot Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Microsoft Copilot</h5>
+                    <p class="card-description">AI-powered productivity assistant that integrates with Microsoft 365,
+                        helping with writing, analysis, and coding</p>
+                </div>
+                <a href="https://copilot.microsoft.com" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/images/prezi-logo.png" alt="Prezi Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Prezi</h5>
+                    <p class="card-description">AI-enhanced presentation tool that helps create dynamic, engaging
+                        presentations with smart templates and suggestions</p>
+                </div>
+                <a href="https://prezi.com" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/images/gamma-logo.png" alt="Gamma Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Gamma</h5>
+                    <p class="card-description">Modern presentation platform with AI-powered design and content
+                        generation for stunning presentations</p>
+                </div>
+                <a href="https://gamma.app" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/images/jasper-logo.png" alt="Jasper Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Jasper</h5>
+                    <p class="card-description">AI writing assistant specializing in marketing content, blogs, and
+                        social media posts with brand voice customization</p>
+                </div>
+                <a href="https://jasper.ai" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="https://images.deepai.org/press-item-image/342a23cf89d74220aea52fe1146fd988/48-thumb.jpg"
+                    alt="DeepAI Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">DeepAI</h5>
+                    <p class="card-description">AI platform offering a range of services</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="https://store.barcelonactiva.cat/zhofsgdjxfzvjra/img/Copilot_Microsoft.png" alt="Copilot Logo"
+                    class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Copilot (Microsoft)</h5>
+                    <p class="card-description">AI assistant integrated into Microsoft Office products</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSBh7BzecnFpqaSLDMVwOsF0AHmeEC0dJT4A&s"
+                    alt="Prezi Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Prezi</h5>
+                    <p class="card-description">Presentation software powered by AI</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+
+
+
+            <div class="card">
+                <img src="https://digiseller.mycdn.ink/preview/1313539/p1_4687622_a553bfd3.jpg" alt="Gamma Logo"
+                    class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Gamma</h5>
+                    <p class="card-description">AI platform with a focus on creativity and problem solving</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+
+
+
+
+            <div class="card">
+                <img src="https://assets.wheelhouse.com/media/_solution_logo_04162024_61721611.png" alt="Jasper Logo"
+                    class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Jasper</h5>
+                    <p class="card-description">AI designed for content creation and writing</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="Synthesia Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Synthesia</h5>
+                    <p class="card-description">AI for creating synthetic video content</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="Replika Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Replika</h5>
+                    <p class="card-description">AI chatbot designed to create personal conversations</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="Character.AI Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Character.AI</h5>
+                    <p class="card-description">AI for creating characters with conversations</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="AIVA Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">AIVA</h5>
+                    <p class="card-description">AI that composes music</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="AI Dungeon Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">AI Dungeon</h5>
+                    <p class="card-description">AI-powered storytelling platform</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="Hugging Face Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Hugging Face</h5>
+                    <p class="card-description">AI community and model hub</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="Bing Chat Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Bing Chat</h5>
+                    <p class="card-description">AI-powered search and assistant from Microsoft</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="Wit.ai Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Wit.ai</h5>
+                    <p class="card-description">AI for building natural language interfaces</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="IBM Watson Assistant Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">IBM Watson Assistant</h5>
+                    <p class="card-description">AI assistant from IBM for enterprise solutions</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="ChatSonic Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">ChatSonic</h5>
+                    <p class="card-description">AI platform for chatbot solutions</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="Kuki Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Kuki (formerly Mitsuku)</h5>
+                    <p class="card-description">AI chatbot with conversational capabilities</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="ChatBot.com Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">ChatBot.com</h5>
+                    <p class="card-description">Platform for building AI chatbots</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="SundarAI Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">SundarAI</h5>
+                    <p class="card-description">AI that powers intelligent chatbots</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="Turing Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Turing</h5>
+                    <p class="card-description">AI platform for building custom solutions</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="Frase Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Frase</h5>
+                    <p class="card-description">AI-driven content creation and research platform</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="Scikit-learn Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Scikit-learn</h5>
+                    <p class="card-description">Machine learning library for Python</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="Tay Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Tay (Microsoft)</h5>
+                    <p class="card-description">AI chatbot developed by Microsoft (discontinued)</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="Bard AI Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Bard AI</h5>
+                    <p class="card-description">Google’s conversational AI</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="Meya Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Meya</h5>
+                    <p class="card-description">AI platform for building conversational agents</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="Zo.ai Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Zo.ai</h5>
+                    <p class="card-description">AI chatbot powered by Microsoft</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="OpenAI Codex Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">OpenAI Codex</h5>
+                    <p class="card-description">AI model that interprets and generates code</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="Botpress Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Botpress</h5>
+                    <p class="card-description">Open-source platform for building AI chatbots</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="BotStar Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">BotStar</h5>
+                    <p class="card-description">AI-powered chatbot platform</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="Dialogflow Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Dialogflow</h5>
+                    <p class="card-description">Google’s platform for building conversational interfaces</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="Rasa Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Rasa</h5>
+                    <p class="card-description">Open-source framework for building conversational AI</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="Snips Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Snips</h5>
+                    <p class="card-description">AI-powered voice platform for devices</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="Krisp Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Krisp</h5>
+                    <p class="card-description">AI noise cancellation tool</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="Siri Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Siri</h5>
+                    <p class="card-description">Voice-activated assistant from Apple</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="Alexa Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Alexa</h5>
+                    <p class="card-description">Voice-controlled AI assistant from Amazon</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="Google Assistant Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Google Assistant</h5>
+                    <p class="card-description">Voice-activated assistant from Google</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="Replika Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Replika</h5>
+                    <p class="card-description">AI chatbot for personal conversations</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="Cleverbot Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Cleverbot</h5>
+                    <p class="card-description">AI chatbot for fun and entertainment</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="PimEyes Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">PimEyes</h5>
+                    <p class="card-description">AI-based facial recognition search engine</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="Face++ Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Face++</h5>
+                    <p class="card-description">AI-powered facial recognition platform</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="Ximilar Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Ximilar</h5>
+                    <p class="card-description">AI-powered visual recognition platform</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="DeepAI Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">DeepAI</h5>
+                    <p class="card-description">AI tools and APIs for developers</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="Clarifai Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Clarifai</h5>
+                    <p class="card-description">AI-powered image and video recognition</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+
+            <div class="card">
+                <img src="/icon" alt="Vicarious Logo" class="card-image">
+                <img class="card-like" src="assets/icons/like.svg" alt="">
+                <div class="card-description-continer">
+                    <h5 class="card-title">Vicarious</h5>
+                    <p class="card-description">AI for visual perception and understanding</p>
+                </div>
+                <a href="#" class="card-button">Visit</a>
+            </div>
+        </main>
+        <footer class="main-footer">
+            <div class="main-footer-links">
+                <section class="section-footer logo-section">
+                    <h4 class="logo"><span class="logo-ai">AI</span> <span class="logo-hub">HUB</span></h4>
+                    <p class="footer-description">
+                        Crafting exceptional furniture pieces that blend style, comfort, and functionality for your
+                        modern living spaces.
+                    </p>
+
+                    <div class=" links-section-1">
+                        <a href="https://github.com/WassimAarab08" class="social-link facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-facebook w-5 h-5">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/WassimAarab08" class="social-link twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-twitter w-5 h-5">
+                                <path
+                                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/WassimAarab08" class="social-link instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-instagram w-5 h-5">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/WassimAarab08" class="social-link linkedin">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-linkedin w-5 h-5">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect width="4" height="12" x="2" y="9"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/WassimAarab08" class="social-link github">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-github w-5 h-5">
+                                <path
+                                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                                </path>
+                                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </section>
+
+
+                <section class="section-footer links-section-2">
+                    <h6 class="footer-title">Quick Links</h6>
+
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="merchandising.html" href="/merchandising.html" class="footer-link">AI Hub
+                                merchandising</a></li>
+                        <li><a href="blog.html" class="footer-link">AI Learning Hub</a></li>
+                        <li><a href="AIchat.html" class="footer-link">Latest AI Tools</a></li>
+
+                    </ul>
+                </section>
+
+
+
+                <section class="section-footer links-section-3">
+                    <h6 class="footer-title">Contact Us</h6>
+                    <ul class="footer-links">
+                        <li><a href="mailto:support@aihub.com" class="footer-link">support@aihub.com</a></li>
+                        <li><a href="tel:+34911234567" class="footer-link">+34 91 123 4567</a></li>
+                        <li><a href="#" class="footer-link">Tech District 28, Madrid</a></li>
+                        <li><a href="#" class="footer-link">Business Hours: 9AM-6PM CET</a></li>
+                    </ul>
+                </section>
+            </div>
+
+            <section class="section-footer section-footer1">
+                <hr class="footer-divider">
+                <p class="footer-copyright">&copy; 2024 AI HUB all rights reserved.</p>
+            </section>
+        </footer>
+
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
