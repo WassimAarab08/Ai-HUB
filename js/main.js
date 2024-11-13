@@ -67,6 +67,7 @@ mobileButton.addEventListener('click', () => {
 
 
 
+
 // Dropdown mobile movil
 mobileNavbarDropdown.addEventListener('click', () => {
     if (mobileDropdownMenu.classList.contains('show')) {
@@ -81,6 +82,8 @@ mobileNavbarDropdown.addEventListener('click', () => {
         mobileDropdownArrow.style.transform = 'rotate(180deg)';
     }
 });
+
+// Cambiar cualquier aparición de "AI Chat" por "General use"
 
 
 
