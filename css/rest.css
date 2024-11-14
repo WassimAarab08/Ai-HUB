@@ -315,7 +315,7 @@ table {
 }
 
 /* Estilos de la barra de navegación  moblie*/
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1065px) {
     .navbar {
         display: none;
     }
@@ -580,7 +580,7 @@ table {
     background-color: #22c55e;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1066px) {
     .mobile-navbar {
         display: none;
     }
