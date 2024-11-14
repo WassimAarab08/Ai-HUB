@@ -83,7 +83,7 @@ mobileNavbarDropdown.addEventListener('click', () => {
     }
 });
 
-// Cambiar cualquier aparición de "AI Chat" por "General use"
+
 
 
 
