@@ -1,0 +1,132 @@
+* {
+    font-family: ui-sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #d1d5db;
+}
+
+.landing {
+    background-image: url('../img/aplicaciones/landing.jpg');
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+
+}
+
+.landing::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.301), rgb(0, 0, 0));
+    z-index: 2;
+
+}
+
+.landing-title {
+
+    font-size: clamp(2.5rem, 5vw, 7rem);
+    text-align: start;
+    width: 1000px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, white, #4ade80, white);
+    z-index: 2;
+}
+
+.landing-cover {
+    z-index: 3;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.landing-btn-container {
+    display: flex;
+    gap: 20px;
+    font-weight: 600;
+    width: 90%;
+    z-index: 2;
+}
+
+.landing-directory-link {
+    border: 1px solid rgba(74, 222, 128, 0.5);
+    color: #4ade80;
+    overflow: hidden;
+    padding: 0.55rem 1.5rem;
+    border-radius: 0.5rem;
+
+    transition: all 300ms ease;
+    position: relative;
+    backdrop-filter: blur(4px);
+
+}
+
+
+.landing-directory-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 50%;
+    height: 100%;
+    background: rgba(34, 197, 94, 0.10);
+    animation: brillo 2s infinite;
+    opacity: .2;
+}
+
+.landing-directory-link:hover {
+    background-color: #22c55e2a;
+
+}
+
+
+@keyframes brillo {
+    0% {
+        left: -50%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+.landing-subtitle {
+    font-size: clamp(.2rem, 1.1rem, 4rem);
+    font-weight: 400;
+    text-align: start;
+    max-width: 90%;
+    margin-bottom: 20px;
+
+}
+
+.landing-shop-link {
+    font-weight: 700;
+    background-color: #4ade80;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 300ms ease;
+}
+
+.landing-shop-link:hover {
+    background-color: #22c55e;
+
+}
