@@ -69,7 +69,7 @@ table {
     padding: 0;
     margin: 0;
     display: grid;
-
+    position: relative;
     grid-template-rows: auto 1fr auto;
 }
 

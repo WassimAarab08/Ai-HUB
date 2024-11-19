@@ -137,3 +137,24 @@
 .texto-cesta {
     margin-left: 10px;
 }
+
+.cart-conteiner {
+    position: fixed;
+    right: 3%;
+    bottom: 4%;
+    background: #22c55e;
+    z-index: 2222;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+
+}
+
+.cart-link {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    color: #fff;
+
+}
