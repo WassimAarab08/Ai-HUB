@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI HUB</title>
+    <title>Carrito de Compra - AI HUB</title>
     <link rel="stylesheet" href="css/rest.css">
     <link rel="stylesheet" href="css/cart.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/css2?family=Inter:wght@300;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 </head>
 
@@ -166,47 +167,49 @@
 
             </nav>
         </header>
+
+
+
+
         <main class="main-content">
+            <div class="carrito-container">
+                <h1 class="titulo-carrito">Tu Carrito de Compra</h1>
+
+                <div class="contenedor-carrito">
+                    <div class="encabezados-carrito">
+                        <div class="encabezado-producto">Producto</div>
+                        <div class="encabezado-precio">Precio</div>
+                        <div class="encabezado-cantidad">Cantidad</div>
+                        <div class="encabezado-subtotal">Subtotal</div>
+                        <div class="encabezado-acciones"></div>
+                    </div>
+
+                    <div id="productos-carrito"></div>
+
+                    <div class="resumen-carrito">
 
 
+                        <div class="checkout-container">
 
 
-            <div id='oopss'>
-                <div id='error-text'>
-                    <img src="https://cdn.rawgit.com/ahmedhosna95/upload/1731955f/sad404.svg" alt="404">
-                    <span>404 PAGE</span>
-                    <p class="p-a">
-                        . The page you were looking for could not be found</p>
-                    <p class="p-b">
-                        ... Back to previous page
-                    </p>
-                    <a href='merchandising.html' class="back">... Back to previous page</a>
+                            <button id="btn-checkout" class="btn-checkout">Proceder al pago</button>
+                            <button id="vaciar-carrito" class="btn-vaciar">
+                                Vaciar carrito
+                            </button>
+                            <div class="total-container">
+                                <h3>Total:</h3>
+                                <p id="total-carrito">0.00€</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </main>
+
+
+
+
+
         <footer class="main-footer">
             <div class="main-footer-links">
                 <section class="section-footer logo-section">
@@ -300,7 +303,21 @@
         </footer>
 
     </div>
+
+    <div class="cart-conteiner">
+        <a href="cart.html" class="cart-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="8" cy="21" r="1"></circle>
+                <circle cx="19" cy="21" r="1"></circle>
+                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+            </svg>
+            <span id="contador-carrito" style="display: none;">0</span>
+        </a>
+    </div>
+
     <script src="js/main.js"></script>
+    <script src="js/carrito.js"></script>
 </body>
 
 </html>

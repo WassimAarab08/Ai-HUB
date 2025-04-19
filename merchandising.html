@@ -169,11 +169,17 @@
             </nav>
         </header>
 
-        <div class="cart-conteiner"><a class="cart-link" href="cart.html"><svg xmlns="http://www.w3.org/2000/svg"
-                    width="3rem" height="3rem" viewBox="0 0 24 24">
-                    <path fill="#d1d5db"
-                        d="M17 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2M1 2h3.27l.94 2H20a1 1 0 0 1 1 1c0 .17-.05.34-.12.5l-3.58 6.47c-.34.61-1 1.03-1.75 1.03H8.1l-.9 1.63l-.03.12a.25.25 0 0 0 .25.25H19v2H7a2 2 0 0 1-2-2c0-.35.09-.68.24-.96l1.36-2.45L3 4H1zm6 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2m9-7l2.78-5H6.14l2.36 5z" />
-                </svg></a></div>
+        <div class="cart-conteiner">
+            <a href="cart.html" class="cart-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="8" cy="21" r="1"></circle>
+                    <circle cx="19" cy="21" r="1"></circle>
+                    <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+                </svg>
+                <span id="contador-carrito" style="display: none;">0</span>
+            </a>
+        </div>
 
 
         <main class="main-content">
@@ -197,13 +203,14 @@
                         Sudadera de color negro simple y cómoda.
                     </p>
 
-                    <button class="btn-agrega-cesta">
-                        <a href="#" class="link-cesta">
-                            <img class="icono-cesta" src="assets/icons/hamburger.svg" alt="">
-                            <span class="texto-cesta">Add to cart</span>
-                        </a>
+                    <button class="btn-agrega-cesta btn-agregar-carrito" data-id="sudadera-001"
+                        data-nombre="Sudadera AI HUB" data-precio="19.99"
+                        data-imagen="https://image.hm.com/assets/hm/75/0c/750cc44b179769a6c212f0bd132be814cfe76567.jpg?imwidth=1260"
+                        data-color="Negro">
+                        <img class="icono-cesta" src="assets/icons/hamburger.svg" alt="">
+                        <span class="texto-cesta">Add to cart</span>
+                    </button>
                 </div>
-                </button>
             </div>
 
             <div class=" card-product">
@@ -219,13 +226,14 @@
                         Sudadera de color blanca simple y cómoda.
                     </p>
 
-                    <button class="btn-agrega-cesta">
-                        <a href="#" class="link-cesta">
-                            <img class="icono-cesta" src="assets/icons/hamburger.svg" alt="">
-                            <span class="texto-cesta">Add to cart</span>
-                        </a>
+                    <button class="btn-agrega-cesta btn-agregar-carrito" data-id="sudadera-002"
+                        data-nombre="Sudadera AI HUB" data-precio="19.99"
+                        data-imagen="https://image.hm.com/assets/hm/b9/57/b957776336839555e5514cc8eeb4695914d365b9.jpg?imwidth=1260"
+                        data-color="Blanco">
+                        <img class="icono-cesta" src="assets/icons/hamburger.svg" alt="">
+                        <span class="texto-cesta">Add to cart</span>
+                    </button>
                 </div>
-                </button>
             </div>
             <div class=" card-product">
                 <img class="img-product"
@@ -240,13 +248,14 @@
                         Sudadera de color verde simple y cómoda.
                     </p>
 
-                    <button class="btn-agrega-cesta">
-                        <a href="#" class="link-cesta">
-                            <img class="icono-cesta" src="assets/icons/hamburger.svg" alt="">
-                            <span class="texto-cesta">Add to cart</span>
-                        </a>
+                    <button class="btn-agrega-cesta btn-agregar-carrito" data-id="sudadera-003"
+                        data-nombre="Sudadera AI HUB" data-precio="19.99"
+                        data-imagen="https://image.hm.com/assets/hm/01/e2/01e21ec02e51cbc1cf63887b8f369cc44baca717.jpg?imwidth=564"
+                        data-color="Verde">
+                        <img class="icono-cesta" src="assets/icons/hamburger.svg" alt="">
+                        <span class="texto-cesta">Add to cart</span>
+                    </button>
                 </div>
-                </button>
             </div>
             <div class=" card-product">
                 <img class="img-product"
@@ -261,13 +270,14 @@
                         Sudadera de color naranja simple y cómoda.
                     </p>
 
-                    <button class="btn-agrega-cesta">
-                        <a href="#" class="link-cesta">
-                            <img class="icono-cesta" src="assets/icons/hamburger.svg" alt="">
-                            <span class="texto-cesta">Add to cart</span>
-                        </a>
+                    <button class="btn-agrega-cesta btn-agregar-carrito" data-id="sudadera-004"
+                        data-nombre="Sudadera AI HUB" data-precio="19.99"
+                        data-imagen="https://image.hm.com/assets/hm/07/60/076068cb20cdb4e3aa98bb653f1078ded0f0fc49.jpg?imwidth=564"
+                        data-color="Naranja">
+                        <img class="icono-cesta" src="assets/icons/hamburger.svg" alt="">
+                        <span class="texto-cesta">Add to cart</span>
+                    </button>
                 </div>
-                </button>
             </div>
 
             <div class=" card-product">
@@ -283,13 +293,14 @@
                         Sudadera de color azul simple y cómoda.
                     </p>
 
-                    <button class="btn-agrega-cesta">
-                        <a href="#" class="link-cesta">
-                            <img class="icono-cesta" src="assets/icons/hamburger.svg" alt="">
-                            <span class="texto-cesta">Add to cart</span>
-                        </a>
+                    <button class="btn-agrega-cesta btn-agregar-carrito" data-id="sudadera-005"
+                        data-nombre="Sudadera AI HUB" data-precio="19.99"
+                        data-imagen="https://image.hm.com/assets/hm/14/15/1415e9d0690868d92b738312136eac0719cda9b0.jpg?imwidth=564"
+                        data-color="Azul">
+                        <img class="icono-cesta" src="assets/icons/hamburger.svg" alt="">
+                        <span class="texto-cesta">Add to cart</span>
+                    </button>
                 </div>
-                </button>
             </div>
             <div class=" card-product">
                 <img class="img-product"
@@ -304,13 +315,14 @@
                         Camiseta de color verde simple y cómoda.
                     </p>
 
-                    <button class="btn-agrega-cesta">
-                        <a href="#" class="link-cesta">
-                            <img class="icono-cesta" src="assets/icons/hamburger.svg" alt="">
-                            <span class="texto-cesta">Add to cart</span>
-                        </a>
+                    <button class="btn-agrega-cesta btn-agregar-carrito" data-id="camiseta-001"
+                        data-nombre="Camiseta AI HUB" data-precio="9.99"
+                        data-imagen="https://image.hm.com/assets/hm/25/59/2559728823dce0689f9d9ad203e27a17a8e747f1.jpg?imwidth=1260"
+                        data-color="Verde">
+                        <img class="icono-cesta" src="assets/icons/hamburger.svg" alt="">
+                        <span class="texto-cesta">Add to cart</span>
+                    </button>
                 </div>
-                </button>
             </div>
             <div class=" card-product">
                 <img class="img-product"
@@ -325,13 +337,14 @@
                         Camiseta de color café oscuro simple y cómoda.
                     </p>
 
-                    <button class="btn-agrega-cesta">
-                        <a href="#" class="link-cesta">
-                            <img class="icono-cesta" src="assets/icons/hamburger.svg" alt="">
-                            <span class="texto-cesta">Add to cart</span>
-                        </a>
+                    <button class="btn-agrega-cesta btn-agregar-carrito" data-id="camiseta-002"
+                        data-nombre="Camiseta AI HUB" data-precio="9.99"
+                        data-imagen="https://image.hm.com/assets/hm/6e/e3/6ee3237ec36a2d24eb74721ebdd7e1ce65a685a0.jpg?imwidth=1260"
+                        data-color="Café oscuro">
+                        <img class="icono-cesta" src="assets/icons/hamburger.svg" alt="">
+                        <span class="texto-cesta">Add to cart</span>
+                    </button>
                 </div>
-                </button>
             </div>
             <div class=" card-product">
                 <img class="img-product"
@@ -346,13 +359,14 @@
                         Camiseta de color rojo simple y cómoda.
                     </p>
 
-                    <button class="btn-agrega-cesta">
-                        <a href="#" class="link-cesta">
-                            <img class="icono-cesta" src="assets/icons/hamburger.svg" alt="">
-                            <span class="texto-cesta">Add to cart</span>
-                        </a>
+                    <button class="btn-agrega-cesta btn-agregar-carrito" data-id="camiseta-003"
+                        data-nombre="Camiseta AI HUB" data-precio="9.99"
+                        data-imagen="https://image.hm.com/assets/hm/99/e6/99e6e15184f4524233025c8633407c553bfffcb9.jpg?imwidth=2160"
+                        data-color="Rojo">
+                        <img class="icono-cesta" src="assets/icons/hamburger.svg" alt="">
+                        <span class="texto-cesta">Add to cart</span>
+                    </button>
                 </div>
-                </button>
             </div>
             <div class=" card-product">
                 <img class="img-product"
@@ -367,13 +381,14 @@
                         Camiseta de color crema simple y cómoda.
                     </p>
 
-                    <button class="btn-agrega-cesta">
-                        <a href="#" class="link-cesta">
-                            <img class="icono-cesta" src="assets/icons/hamburger.svg" alt="">
-                            <span class="texto-cesta">Add to cart</span>
-                        </a>
+                    <button class="btn-agrega-cesta btn-agregar-carrito" data-id="camiseta-004"
+                        data-nombre="Camiseta AI HUB" data-precio="9.99"
+                        data-imagen="https://image.hm.com/assets/hm/e9/0c/e90c297b5b49be36fe399581aac68387f6f8c2bb.jpg?imwidth=1260"
+                        data-color="Crema">
+                        <img class="icono-cesta" src="assets/icons/hamburger.svg" alt="">
+                        <span class="texto-cesta">Add to cart</span>
+                    </button>
                 </div>
-                </button>
             </div>
             <div class=" card-product">
                 <img class="img-product"
@@ -388,13 +403,14 @@
                         Camiseta de color blanca simple y cómoda.
                     </p>
 
-                    <button class="btn-agrega-cesta">
-                        <a href="#" class="link-cesta">
-                            <img class="icono-cesta" src="assets/icons/hamburger.svg" alt="">
-                            <span class="texto-cesta">Add to cart</span>
-                        </a>
+                    <button class="btn-agrega-cesta btn-agregar-carrito" data-id="camiseta-005"
+                        data-nombre="Camiseta AI HUB" data-precio="9.99"
+                        data-imagen="https://image.hm.com/assets/hm/bd/e4/bde4ef42f917ccb678c4ff1d218520ce2f10ff6d.jpg?imwidth=1260"
+                        data-color="Blanco">
+                        <img class="icono-cesta" src="assets/icons/hamburger.svg" alt="">
+                        <span class="texto-cesta">Add to cart</span>
+                    </button>
                 </div>
-                </button>
             </div>
             <div class=" card-product">
                 <img class="img-product"
@@ -409,13 +425,14 @@
                         Zapatillas de color crema simples y cómodas.
                     </p>
 
-                    <button class="btn-agrega-cesta">
-                        <a href="#" class="link-cesta">
-                            <img class="icono-cesta" src="assets/icons/hamburger.svg" alt="">
-                            <span class="texto-cesta">Add to cart</span>
-                        </a>
+                    <button class="btn-agrega-cesta btn-agregar-carrito" data-id="zapatillas-001"
+                        data-nombre="Zapatillas AI HUB" data-precio="39.99"
+                        data-imagen="https://image.hm.com/assets/hm/51/02/510214ba88f37430c7ddf7bb0b20da95541cd203.jpg?imwidth=1260"
+                        data-color="Crema">
+                        <img class="icono-cesta" src="assets/icons/hamburger.svg" alt="">
+                        <span class="texto-cesta">Add to cart</span>
+                    </button>
                 </div>
-                </button>
             </div>
 
             <div class=" card-product">
@@ -431,19 +448,19 @@
                         Zapatillas de color crema simples y cómodas.
                     </p>
 
-                    <button class="btn-agrega-cesta">
-                        <a href="#" class="link-cesta">
-                            <img class="icono-cesta" src="assets/icons/hamburger.svg" alt="">
-                            <span class="texto-cesta">Add to cart</span>
-                        </a>
+                    <button class="btn-agrega-cesta btn-agregar-carrito" data-id="zapatillas-002"
+                        data-nombre="Zapatillas AI HUB" data-precio="39.99"
+                        data-imagen="https://image.hm.com/assets/hm/00/0c/000c9a34bc107c1043970c9dbc18d4fdbc65de94.jpg?imwidth=1260"
+                        data-color="Blanco">
+                        <img class="icono-cesta" src="assets/icons/hamburger.svg" alt="">
+                        <span class="texto-cesta">Add to cart</span>
                     </button>
                 </div>
-
             </div>
 
             <div class=" card-product">
                 <img class="img-product"
-                    src="https://image.hm.com/assets/hm/3b/25/3b257a7994fedecaf3fba6847cb75182015df4b4.jpg?imwidth=467"
+                    src="https://image.hm.com/assets/hm/a2/92/a292cd3c8d05be3c223dc4ea57215ded279b62ff.jpg?imwidth=820"
                     alt="Camiseta AI HUB simple">
                 <div class="product-description-continer">
                     <h5 class="product-title">
@@ -454,14 +471,14 @@
                         Calcetines de color negro simples y cómodos.
                     </p>
 
-                    <button class="btn-agrega-cesta">
-                        <a href="#" class="link-cesta">
-                            <img class="icono-cesta" src="assets/icons/hamburger.svg" alt="">
-                            <span class="texto-cesta">Add to cart</span>
-                        </a>
+                    <button class="btn-agrega-cesta btn-agregar-carrito" data-id="calcetines-001"
+                        data-nombre="Calcetines AI HUB" data-precio="3.99"
+                        data-imagen="https://image.hm.com/assets/hm/a2/92/a292cd3c8d05be3c223dc4ea57215ded279b62ff.jpg?imwidth=820"
+                        data-color="Negro">
+                        <img class="icono-cesta" src="assets/icons/hamburger.svg" alt="">
+                        <span class="texto-cesta">Add to cart</span>
                     </button>
                 </div>
-
             </div>
 
             <div class=" card-product">
@@ -477,14 +494,14 @@
                         Calcetines de color blanco simples y cómodos.
                     </p>
 
-                    <button class="btn-agrega-cesta">
-                        <a href="#" class="link-cesta">
-                            <img class="icono-cesta" src="assets/icons/hamburger.svg" alt="">
-                            <span class="texto-cesta">Add to cart</span>
-                        </a>
+                    <button class="btn-agrega-cesta btn-agregar-carrito" data-id="calcetines-002"
+                        data-nombre="Calcetines AI HUB" data-precio="3.99"
+                        data-imagen="https://image.hm.com/assets/hm/81/37/81376c9bf5526645536affe9f5d008c3c8e24d9e.jpg?imwidth=1260"
+                        data-color="Blanco">
+                        <img class="icono-cesta" src="assets/icons/hamburger.svg" alt="">
+                        <span class="texto-cesta">Add to cart</span>
                     </button>
                 </div>
-
             </div>
 
             <div class=" card-product">
@@ -500,13 +517,14 @@
                         Pantalón de color negro simple y cómodo.
                     </p>
 
-                    <button class="btn-agrega-cesta">
-                        <a href="" class="link-cesta">
-                            <img class="icono-cesta" src="assets/icons/hamburger.svg" alt="">
-                            <span class="texto-cesta">Add to cart</span>
-                        </a>
+                    <button class="btn-agrega-cesta btn-agregar-carrito" data-id="pantalon-001"
+                        data-nombre="Pantalón AI HUB" data-precio="29.99"
+                        data-imagen="https://image.hm.com/assets/hm/ea/d7/ead79a8422df6e29abb8e0057c7dbf2d6658bf4c.jpg?imwidth=1260"
+                        data-color="Negro">
+                        <img class="icono-cesta" src="assets/icons/hamburger.svg" alt="">
+                        <span class="texto-cesta">Add to cart</span>
+                    </button>
                 </div>
-                </button>
             </div>
 
 
@@ -626,6 +644,8 @@
 
     </div>
     <script src="js/main.js"></script>
+    <script src="js/carrito1.js"></script>
+    <script src="js/carrito.js"></script>
 </body>
 
 </html>
